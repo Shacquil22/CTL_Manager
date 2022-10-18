@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/background_color"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/r_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r_settings">
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="100dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/light_dark"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tLight/Dark"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_theme"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/chart"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tCharts"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_contactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chart"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/mail"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tContact Us"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textColorLink="@color/mainColorIcons"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_contactUs"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/info"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tAbout Us"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textColorLink="@color/mainColorIcons"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_import_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_aboutUs"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/import_export"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tImport/Export"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_contactUs"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="280dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/logout"
+            android:drawableTint="?attr/icon_color"
+            android:text="\t\t\tLogout"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

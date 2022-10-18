@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/background_color"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<!--heading-->
+    <RelativeLayout
+        android:id="@+id/rl_profileH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="?attr/text_color"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+<!--body-->
+    <RelativeLayout
+        android:id="@+id/rl_profileImage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_profileH"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/img_profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/user"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+<!--userInfo-->
+    <RelativeLayout
+        android:id="@+id/rl_profileBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_profileImage"
+        android:layout_marginTop="40dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemFirstName"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:hint="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFirst Name"
+            app:hintTextColor="?attr/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtItemFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/background_color"
+                android:textColor="?attr/text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemUsername"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/itemFirstName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:hint="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsername"
+            app:hintTextColor="?attr/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtItemUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/background_color"
+                android:textColor="?attr/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemEmail"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/itemUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:hint="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEmail"
+            app:hintTextColor="?attr/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtItemEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/background_color"
+                android:textColor="?attr/text_color"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itemPassword"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/itemEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            app:endIconMode="password_toggle"
+            android:hint="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPassword"
+            app:hintTextColor="?attr/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtItemPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/background_color"
+                android:inputType="textPassword"
+                android:textColor="?attr/text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+<!--bottom-->
+<!--button-->
+    <RelativeLayout
+        android:id="@+id/rl_profileBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_profileBody"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btn_updateUSer"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/mainColorIcons"
+            android:text="Update"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

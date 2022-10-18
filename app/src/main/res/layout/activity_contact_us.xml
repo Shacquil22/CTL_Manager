@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textContactUs"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="96dp"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        style="@style/TextColor"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtTextName"
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactUs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Name:"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="?attr/text_color" />
+
+    <EditText
+        android:id="@+id/edtTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        style="@style/TextColor"
+        android:hint="Email:"
+        android:textColorHint="?attr/text_color"
+        android:layout_below="@+id/edtTextName" />
+
+    <EditText
+        android:id="@+id/edtTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTextEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        style="@style/TextColor"
+        android:hint="Message:"
+        android:textColorHint="?attr/text_color"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTextMessage"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        android:text="SUBMIT"
+        style="@style/TextColor"
+        android:backgroundTint="@color/mainColorIcons"/>
+
+</RelativeLayout>

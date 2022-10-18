@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:id="@+id/signUpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="Sign Up"
+            android:textColor="?attr/text_color"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <!--logo-->
+
+    <LinearLayout
+        android:id="@+id/signUpLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpTitle">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="109dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo1"
+            />
+
+    </LinearLayout>
+
+    <!--Credentials-->
+
+    <RelativeLayout
+        android:id="@+id/credentialSignUpBox"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/signUpLogo"
+        android:layout_marginTop="40dp">
+
+        <!--Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsernameS"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Username"
+            app:boxBackgroundColor="?attr/background_color"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="?attr/text_color"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mainColorIcons"
+            app:hintTextColor="?attr/text_color"
+            app:startIconDrawable="@drawable/user"
+            app:startIconTint="@color/mainColorIcons">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUsernameS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="?attr/text_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Email-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNameS"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txtUsernameS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="Name"
+            app:boxBackgroundColor="?attr/background_color"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="?attr/text_color"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mainColorIcons"
+            app:hintTextColor="?attr/text_color"
+            app:startIconDrawable="@drawable/user"
+            app:startIconTint="@color/mainColorIcons">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNameS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="?attr/text_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtEmailS"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txtNameS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="email@address.com"
+            app:boxBackgroundColor="?attr/background_color"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="?attr/text_color"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mainColorIcons"
+            app:helperText="Required"
+            app:helperTextTextColor="@color/white"
+            app:hintTextColor="?attr/text_color"
+            app:startIconDrawable="@drawable/mail"
+            app:startIconTint="@color/mainColorIcons">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmailS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColor="?attr/text_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPasswordS"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txtEmailS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            app:boxBackgroundColor="?attr/background_color"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="?attr/text_color"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/mainColorIcons"
+            app:hintTextColor="?attr/text_color"
+            app:startIconDrawable="@drawable/lock"
+            app:startIconTint="@color/mainColorIcons">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPasswordS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="?attr/text_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <!--Button-->
+    <RelativeLayout
+        android:id="@+id/lblSignUpS"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+
+        android:layout_below="@+id/credentialSignUpBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mainColorIcons"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <!--Already have an account-->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lblSignUpS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_AlreadySignedUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:text="Already Have An Account?"
+            android:textAlignment="center"
+            android:textColor="@color/mainColorIcons" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
